@@ -79,9 +79,14 @@ for i in range(len(list_of_models)):
                 elif row[oxide] == 0:
                     f.write("float('nan')")
                 else:
-                    f.write(str(row[oxide]))
+                    f.write(str(round(row[oxide],2)))
                 if iterno < len(current.index):
-                    f.write(",")
+                    if iterno % 4 == 0:
+                        f.write(",")
+                    else:
+                        f.write(", ")
+                if iterno % 4 == 0:
+                    f.write("\n")
                 iterno += 1
-            f.write("], \n")
-    f.write(" }) \n")
+            f.write("],\n")
+    f.write(" })\n")
