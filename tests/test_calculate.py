@@ -1,5 +1,5 @@
 import unittest
-import VESIcal as v 
+import VESIcal as v
 
 class TestDissolvedVolatiles(unittest.TestCase):
     def setUp(self):
@@ -34,7 +34,7 @@ class TestDissolvedVolatiles(unittest.TestCase):
 
         # solubilities calculated with VESIcal in wt% and translated externally to mol fraction
         self.shishkinaMixed_wtpt =      {'H2O_liq': 2.24019,
-                                        'CO2_liq': 0.028022292} 
+                                        'CO2_liq': 0.028022292}
         self.shishkinaMixed_molox =     {'H2O_liq': 0.07415139,
                                         'CO2_liq': 0.000379788}
 
@@ -162,7 +162,7 @@ class TestSaturationPressure(unittest.TestCase):
         self.batch_molox.set_default_units("mol_oxides")
 
         # saturation pressures calculated with VESIcal
-        self.shishkinaMixed =      1906.9487651401432 
+        self.shishkinaMixed =      1906.9487651401432
         self.dixonMixed =          1847.1637265676327
         self.iaconomarzianoMixed = 1437.4446250186159
         self.liuMixed =            2157.191497153953
@@ -323,7 +323,7 @@ class TestEquilibriumFluidComp(unittest.TestCase):
         self.sample_molox.set_default_units("mol_oxides")
 
         # equilibrium fluid comps calculated with VESIcal
-        self.shishkinaMixed =      {'H2O': 0.7158408854774682, 'CO2': 0.28415911452253184} 
+        self.shishkinaMixed =      {'H2O': 0.7158408854774682, 'CO2': 0.28415911452253184}
         self.dixonMixed =          {'H2O': 0.7750859842655139, 'CO2': 0.2249140157344861}
         self.iaconomarzianoMixed = {'H2O': 0.8103141353709358, 'CO2': 0.18968586462906423}
         self.liuMixed =            {'H2O': 0.7066707740811572, 'CO2': 0.2933292259188428}
@@ -436,8 +436,3 @@ class TestEquilibriumFluidComp(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
-
-
-
